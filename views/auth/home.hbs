@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote for Your Favorite Candidate</title>
+    <!-- Add any CSS or style links here -->
+</head>
+<body>
+  <h1>WELCOME TO NAUMSA VOTING PLATFORM!</h1>
+
+  <h2>Vote for Your Favorite Candidate</h2>
+
+    
+     <ul>
+        {{#each users}}
+        <li>{{name}}, {{position}} , <img src="{{imageUrl}}">,{{description}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
+<!--<img src="<%= product.imageUrl %>", alt="<%= product.title %>">!>
